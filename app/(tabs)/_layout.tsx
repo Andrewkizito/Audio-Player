@@ -13,6 +13,14 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
+        name="library"
+        options={{
+          tabBarIcon: ({ color }) => (
+            <Ionicons size={20} name="musical-note-outline" color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
         name="settings"
         options={{
           tabBarIcon: ({ color }) => (
